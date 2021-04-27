@@ -1,0 +1,708 @@
+
+.worksh2, .modalwindow ,*{
+  animation: fadeIn 0.3s;
+}
+
+.navv{
+  animation: fadeIn 0.8s;
+}
+
+.fuwafuwa {
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+  }
+
+  .buruburu {
+    -webkit-animation:buruburu 0.1s infinite linear alternate;
+    animation:buruburu 0.1s infinite linear alternate;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+
+@keyframes fuwafuwa {
+0% {transform:translate(0, 0) rotate(-5deg);}
+50% {transform:translate(0, -5px) rotate(0deg);}
+100% {transform:translate(0, 0)rotate(5deg);}
+}
+
+@keyframes buruburu {
+  0% {transform:translate(0, 0) rotate(-3deg);}
+  50% {transform:translate(0, -1px) rotate(0deg);}
+  100% {transform:translate(0, 0)rotate(3deg);}
+}
+
+@keyframes bg-color {
+  0% { background-color: #E15B5B; }
+  20% { background-color: #AB5BE1; }
+  40% { background-color: #5B6DE1; }
+  60% { background-color: #5BCFE1; }
+  80% { background-color: #D8E15B; }
+  100% { background-color: #5BE16D; }
+}
+/*monster
+--------------------------------------------------------------------------------------*/
+.mon1{
+  width: 300px;
+  position: absolute;
+  top:20%;
+  left:1%;
+  z-index: 0;
+
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+  display: none;
+}
+
+.mon2{
+  width: 300px;
+  position: absolute;
+  top:20%;
+  right:1%;
+  z-index: 0;
+  display: none;
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+}
+
+.mon3{
+  width: 300px;
+  position: absolute;
+  bottom:0%;
+  right:1%;
+  z-index: 0;
+  display: none;
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+}
+
+.mon4{
+  width: 300px;
+  position: absolute;
+  bottom:0;
+  z-index: 0;
+  left :1%;
+  display: none;
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+}
+.mon5{
+  width: 300px;
+  position: absolute;
+  top:20%;
+  left: 50%;
+  transform:translateX(-50%);
+  z-index: 0;
+
+  display: none;
+
+}
+.mon6{
+  width: 300px;
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  transform:translateX(-50%);
+  z-index: 0;
+  display: none;
+}
+
+.monfix1{
+  width: 200px;
+  position: fixed;
+  top:20%;
+  left: 0;
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+  display: none;
+}
+
+.monfix2{
+  width: 200px;
+  position: fixed;
+  bottom:10%;
+  right: 0;
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+  display: none;
+
+}
+/*全体
+------------------------------------------------------*/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  color: white;
+}
+.flex{
+  display: flex;
+}
+
+.logo{
+  line-height: 80px;;
+}
+h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body{
+  background-color:#D2EDFF ;
+  transition: 0.5s;
+}
+
+.Headernav a{
+  background-color:#5DBEFF;
+  line-height: 80px;
+}
+.wrapper{
+  width:960px;
+  margin:0 auto;
+}
+
+.SpaceBetween{
+  justify-content: space-between;
+}
+
+.comingsoon{
+  font-size: 2rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+.fixed{
+  overflow: hidden;
+}
+
+
+/*WorksCard
+----------------------------------------------*/
+
+.MainBg{
+  background-color: cornflowerblue;
+  height: 100vh;
+}
+.workscard img{
+  border-radius: 10px 10px 0 0;
+}
+.workscard{
+  display: block;
+  text-align: center;
+  flex-basis: 30%;
+  margin:30px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: box-shadow .5s;
+  transition: translate .5s;
+}
+.worksname{
+  padding:20px 0;
+  color: #fff;
+  font-weight: 600;
+
+}
+.WorksFlex{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.worksh2{
+  font-size: 2rem;
+  color: #5d83ff;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.workscard:hover{
+  box-shadow: 0 12px 12px gray;
+  transform: translate(0, -5px);
+
+}
+/*Modal
+------------------------------------------------------------------------------*/
+
+
+ 
+
+    .modalContent{
+ 
+      position: fixed;
+      z-index: 999;
+      width: 70%;
+      height:70%;
+      padding: 40px;
+      background-color: white;
+      left:50%;
+      
+      transform:translateX(-50%);
+      top: 10%;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+    
+    }
+    
+    
+    .back{
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    
+    }
+    
+    .modalContent img{
+      display:block;
+     
+      object-fit: contain;
+    }
+    
+    .Mtext{
+     
+      text-align: center;
+      padding-top: 20px;
+      overflow: wrap;
+    }
+    .Mtext p{
+      margin-bottom:40px;
+    }
+    .Mname{
+      font-size: 2rem;
+      font-weight : 600;
+    }
+    
+    .Murl a{
+      color: black;
+    }
+    
+
+  
+
+
+
+/*footer
+----------------------------------------------------------*/
+footer{
+  text-align: center;
+  height:80px;
+  background-color:#4988C8;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footerwith{
+  padding-top: 30px;
+}
+/*slide
+-------------------------------------------*/
+.slideicon{
+  display: block;
+  margin: 0 auto;
+  padding-top:60px;
+  padding-bottom: 30px;
+}
+.slidewrap{
+  border-radius: 10px;
+  margin: 50;
+  height: 300;
+  transition: box-shadow .5s;
+  transition: translate .5s;
+}
+
+
+
+.slidename{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.skilldesc{
+  margin-top: 60px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.skilldesc p{
+  margin-top:10px;
+}
+/*tab
+--------------------------------*/
+.tabbutton a{
+  display: block;
+  padding: 20px 30px;
+  font-size: 1.2rem;
+}
+
+
+.tabbutton {
+  margin-right: 40px;
+}
+
+.tabcontent{
+  background-color:#B7D6FF;
+  padding: 50px;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.4);
+}
+
+.maintab{
+  color:#fff;
+  font-weight: 600;
+  background-color:#B7D6FF;
+}
+
+.subtab{
+  color:rgb(255, 255, 255);
+  background-color:rgb(53, 53, 53);
+}
+
+/*プロフィール
+---------------------------------------------*/
+.profileimage{
+  padding-bottom:20px ;
+}
+
+#tab1 .shunD{
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgb(53, 53, 53);
+}
+
+.procontent{
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.procontent p{
+  margin-top: 20px;
+}
+
+.SNS{
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.inputarea{
+  border-radius: 5px;
+  border:solid 2px rgb(255, 255, 255);
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.inputarea:focus{
+border:solid 2px rgb(119, 174, 255);
+z-index: 10;
+    outline: 0;
+}
+  
+
+.form input{
+  height:30px;
+}
+#tab3 .form textarea{
+  width:100%;
+  height:300px;
+}
+#tab3 .form button{
+  display: block;
+  padding: 10px 20px;
+  background-color: rgb(53, 53, 53);
+  color:white;
+  border-radius: 5px;
+}
+label{
+  color:#fff;
+  font-weight: 600;
+}
+
+
+/*mainvisual
+-------------------------------------------------------------*/
+.mainvisual{
+  height:100vh;
+  background-size: cover;
+  animation: bg-color 10s infinite;
+}
+
+.kuroku{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.2);
+}
+.port{
+  position: absolute;
+  color: #fff;
+  width:100%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  top: 50%;
+}
+
+/*responsive
+---------------------------------------------------------------------------------*/
+.hamburger{
+  margin-top:30px;
+  margin-right: 30px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+  transition: 1s;
+  z-index: 999;
+
+}
+.inner_line{
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: 1s;
+  border-radius: 4px;
+}
+#line2 {
+  margin-top: 4px;
+}
+#line3 {
+  margin-top: 4px;
+}
+.navv{
+  display: none;
+}
+.in{
+  position: fixed;
+  display: block;
+}
+
+#nav{
+  position:absolute;
+  top:0;
+  left :0; 
+  width : 100%;
+  height:100vh;
+  background: rgba(0,0,0,0.8);
+  z-index: 800;
+}
+
+
+
+#nav li{
+  text-align: center;
+  margin-top: 80px;
+}
+
+.batu1{
+   transform: rotate(45deg); 
+  margin-top:3px;
+  position: absolute;
+}
+
+.batu2{
+   transform: rotate(-45deg); 
+   position: absolute;
+
+}
+
+.shokyo{
+  display: none;
+}
+
+.mae{
+  z-index:1000;
+}
+
+.resabout{
+  text-align: center;
+}
+.resabout .shunD{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgb(53, 53, 53);
+}
+
+.resabout p{
+  line-height: 2;
+}
+
+
+.resabout button{
+  display: block;
+  padding: 10px 20px;
+  background-color: rgb(53, 53, 53);
+  color:white;
+  border-radius: 5px;
+  margin:0 auto;
+}
+
+.resabout .form{
+  margin-top: 40px;
+  background-color:#B7D6FF;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.resabout .SNS{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+  .wrapper{
+    width : 600px;
+
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .Headernav{
+    display: none;
+  }
+
+  .mon5,.mon6,.monfix1,.monfix2{
+    display: none;
+  }
+
+  h1{
+    font-size: 1rem;
+  font-weight: bold;
+  }
+
+  .Headernav li{
+    margin-left: 30px;
+  }
+
+  .slick-arrow::before{
+    display: none;
+  }
+
+  .workscard{
+    flex-basis: 50%;
+  }
+
+  /*--------------------------------------------*/
+
+  .modalContent{
+ 
+    position: fixed;
+    z-index: 999;
+    width: 70%;
+    height:70%;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: anywhere;
+    top: 10%;
+    left:50%;
+      
+    transform:translateX(-50%);
+    overflow-y: scroll;
+  }
+  
+  
+  .back{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  
+  }
+  
+  .modalContent img{
+    display:block;
+    object-fit: contain;
+  }
+  
+ 
+  .Mname{
+    font-size: 2rem;
+    font-weight : 600;
+  }
+  
+  .Murl a{
+    color: black;
+  }
+  
+
+
+}
+@media screen and (max-width: 570px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .wrapper{
+    width : 95%;
+
+  }
+
+
+  footer{
+    text-align: center;
+    height:80px;
+    background-color:#4988C8;
+    color: white;
+    position: inherit;
+    width: 100%;
+  }
+
+  .mon4,.mon3,.mon2,.mon1{
+    display: none;
+  }
+
+  .port{
+    font-size: 1.5rem;
+  }
+
+  
+  .modalContent{
+ 
+    position: fixed;
+    z-index: 999;
+    width: 70%;
+    height:50%;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
+    overflow-y: scroll;
+  }
+
+}
