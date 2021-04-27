@@ -21,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://shundson.github.io/portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
