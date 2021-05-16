@@ -20,11 +20,11 @@ const workscontents = [
   },
   {
     id: 2,
-    name: "name3",
-    image: `${process.env.PUBLIC_URL}/images/sakuhin.jpg`,
+    name: "QiitaAPIを使った記事検索アプリ",
+    image: `${process.env.PUBLIC_URL}/images/sakuhin3.jpg`,
     desc:
-      "texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext",
-    url: "https://google.com",
+      "QiitaAPIを使い、Qiitaの記事を検索できるアプリを作成した。",
+    url: "https://shundson.github.io/react-axcios-qiita/",
   },
   {
     id: 3,
