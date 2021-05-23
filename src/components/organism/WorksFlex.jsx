@@ -23,16 +23,16 @@ const workscontents = [
     name: "QiitaAPIを使った記事検索アプリ",
     image: `${process.env.PUBLIC_URL}/images/sakuhin3.jpg`,
     desc:
-      "QiitaAPIを使い、Qiitaの記事を検索できるアプリを作成した。",
+      "QiitaAPIを使い、Qiitaの記事を検索できるアプリを作成した。React/QiitaAPI/bootstrap/使用",
     url: "https://shundson.github.io/react-axcios-qiita/",
   },
   {
     id: 3,
-    name: "name4",
-    image: `${process.env.PUBLIC_URL}/images/sakuhin.jpg`,
+    name: "ツイートアプリ",
+    image: `${process.env.PUBLIC_URL}/images/sakuhin4.jpg`,
     desc:
-      "texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext",
-    url: "https://google.com",
+      "ツイート機能がついているウェブアプリを制作した。React/Redux toolkit/Firebase/使用",
+    url: "https://react-sns-f92b5.web.app/",
   },
   {
     id: 4,
